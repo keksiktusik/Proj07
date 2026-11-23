@@ -40,7 +40,7 @@ def bank():
 def test_wplac_poprawna_kwota(bank):
     wynik = bank.wplac("1234567895", 200)
 
-    assert wynik == Decimal("9999")
+    assert wynik == Decimal("1200")
     assert len(bank.konta["1234567895"].historia) == 1
 
 
